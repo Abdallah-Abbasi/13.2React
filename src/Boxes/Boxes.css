@@ -1,0 +1,46 @@
+*{
+    margin: auto;
+}
+.Box {
+    background-color: purple;
+    margin: 0.50rem;
+    position: relative;
+    animation-name: slide;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+@keyframes slide {
+    from {
+    left: -100px;
+    }
+    to {
+    left: 0;
+    }
+}
+
+.Box.Box1 {
+    width: 5rem;
+    height: 2.5rem;
+}
+.Box.Box2 {
+    width: 2.5rem;
+    height: 1.25rem;
+}
+.Box.Box3 {
+    width: 1.25rem;
+    height: 0.625rem;
+}
+.Invs{
+    position: relative;
+    animation-name: disappear;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes disappear {
+    from {
+    opacity: 1;
+    }
+    to {
+    opacity: 0;
+    }
+}
